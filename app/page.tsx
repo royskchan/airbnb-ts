@@ -4,8 +4,7 @@ import Header from "@/components/Header";
 import LargeCard from "@/components/LargeCard";
 import MediumCard from "@/components/MediumCard";
 import SmallCard from "@/components/SmallCard";
-import { GetServerSideProps } from "next";
-import Head from "next/head";
+import { CardData, ExploreData } from "@/types";
 
 export default async function Home() {
   const exploreData: ExploreData[] = await fetch(
@@ -18,10 +17,6 @@ export default async function Home() {
 
   return (
     <div className="">
-      <Head>
-        <title>My Airbnb</title>
-      </Head>
-
       {/* Header */}
       <Header />
 

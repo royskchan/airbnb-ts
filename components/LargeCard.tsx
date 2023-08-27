@@ -7,6 +7,7 @@ interface Props {
   description: string;
   buttonText: string;
 }
+
 function LargeCard({ img, title, description, buttonText }: Props) {
   return (
     <section className="relative py-16 cursor-pointer">
