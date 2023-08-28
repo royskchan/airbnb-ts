@@ -24,7 +24,7 @@ async function Search({ searchParams }: Props) {
     "dd MMM yy"
   );
 
-  const range = `${formattedStartDate} - ${formattedEndDate}`;
+  const range = `${formattedStartDate}  - ${formattedEndDate}`;
 
   const searchResults: SearchResult[] = await fetch(
     "https://www.jsonkeeper.com/b/5NPS"
