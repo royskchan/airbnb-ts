@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { ExploreData } from "@/types";
 
 function SmallCard({ img, location, distance }: ExploreData) {
   return (
