@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { CardData } from "@/types";
 
 function MediumCard({ img, title }: CardData) {
   return (
